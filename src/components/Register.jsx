@@ -19,6 +19,7 @@ const Register = () => {
     }
 
     useEffect(() => {
+        if (loading) return;
         if (user) navigate("/dashboard");
         console.log(user.uid)
       }, [user, loading]);
